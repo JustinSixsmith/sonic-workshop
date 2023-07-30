@@ -1,13 +1,14 @@
 "use client";
 
-import { Fragment } from "react";
 import { Disclosure, Menu, Transition } from "@headlessui/react";
 import { Bars3Icon, BellIcon, XMarkIcon } from "@heroicons/react/24/outline";
 import Image from "next/image";
+import Link from "next/link";
+import { Fragment } from "react";
 
 const navigation = [
-  { name: "Dashboard", href: "#", current: true },
-  { name: "Team", href: "#", current: false },
+  { name: "Dashboard", href: "#", current: false },
+  { name: "Group", href: "#", current: false },
   { name: "Projects", href: "#", current: false },
   { name: "Calendar", href: "#", current: false },
 ];
@@ -16,7 +17,7 @@ function classNames(...classes: string[]) {
   return classes.filter(Boolean).join(" ");
 }
 
-export default function Example() {
+export default function Header() {
   return (
     <Disclosure as="nav" className="bg-gray-800">
       {({ open }) => (
@@ -37,9 +38,6 @@ export default function Example() {
               </div>
               <div className="flex flex-1 items-center justify-center sm:items-stretch sm:justify-start">
                 <div className="flex flex-shrink-0 items-center">
-                  <span className="mx-2 font-bold text-white">
-                    Sonic Workshop
-                  </span>
                   <Image
                     className="h-8 w-auto"
                     width={64}
@@ -47,6 +45,9 @@ export default function Example() {
                     src="https://img.icons8.com/flat-round/64/audio-wave.png"
                     alt="audio-wave"
                   />
+                  <Link href="/" className="mx-2 font-bold text-white">
+                    Sonic Workshop
+                  </Link>
                 </div>
                 <div className="hidden sm:ml-6 sm:block">
                   <div className="flex space-x-4">

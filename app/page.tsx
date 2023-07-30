@@ -1,8 +1,6 @@
-import Image from 'next/image';
-
 export default function Home() {
   return (
-    <main className="h-screen flex justify-center items-center">
+    <main className="flex h-screen items-center justify-center">
       <p className="text-red">Hello world</p>
     </main>
   );
