@@ -1,14 +1,14 @@
-import "./globals.css";
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
 import dynamic from "next/dynamic";
-import Footer from "./Footer";
+import { Inter } from "next/font/google";
+import "./globals.css";
 
 const inter = Inter({ subsets: ["latin"] });
 
-const DynamicHeaderWithNoSSR = dynamic(() => import("./Header"), {
-  ssr: false,
-});
+const DynamicHeaderWithNoSSR = dynamic(
+  () => import("./Header"), // replace './Header' with the path to your Header component
+  { ssr: false },
+);
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -23,9 +23,10 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={inter.className}>
-        <DynamicHeaderWithNoSSR />
-        {children}
-        <Footer />
+        <div className={`flex min-h-screen flex-col ${inter.className}`}>
+          <DynamicHeaderWithNoSSR />
+          <main className="flex-grow">{children}</main>
+        </div>
       </body>
     </html>
   );
