@@ -1,3 +1,12 @@
+export type User = {
+  createdAt: Date;
+  name: String;
+  avatar: Image;
+  email: String;
+  bio: String;
+  id: String;
+};
+
 export type Track = {
   createdAt: Date;
   name: String;
@@ -23,3 +32,12 @@ export type Track = {
 //       // add more metadata properties as needed
 //     }
 // },
+
+type Project = {
+  createdAt: Date;
+  name: String;
+  description: String;
+  users: User[];
+  tracks: Track[];
+  id: String;
+};

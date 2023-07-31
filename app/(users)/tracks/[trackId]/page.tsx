@@ -1,4 +1,7 @@
 import { Track } from "@/typings";
+import { notFound } from "next/navigation";
+
+export const dynamicParams = true;
 
 type PageProps = {
   params: {
@@ -18,6 +21,8 @@ const fetchTrack = async (trackId: string) => {
 
 async function TrackPage({ params: { trackId } }: PageProps) {
   const track = await fetchTrack(trackId);
+
+  if (!track.id) return notFound();
 
   return (
     <div className="m-2, border-2 bg-[#CAD2C5] p-10 shadow-lg">

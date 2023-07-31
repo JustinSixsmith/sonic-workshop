@@ -1,6 +1,6 @@
 import { Track } from "@/typings";
 import Link from "next/link";
-import Footer from "../Footer";
+import Footer from "../../Footer";
 
 const fetchTracks = async () => {
   const res = await fetch("https://64c4022067cfdca3b6608e88.mockapi.io/track");
@@ -14,11 +14,11 @@ async function TrackList() {
   return (
     <>
       {tracks.map((track) => (
-        <p key={track.id}>
+        // eslint-disable-next-line react/jsx-key
+        <p>
           <Link href={`/tracks/${track.id}`}>Track name: {track.name}</Link>
         </p>
       ))}
-      <Footer />
     </>
   );
 }
