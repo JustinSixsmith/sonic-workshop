@@ -4,7 +4,7 @@ export default function About() {
       <img
         className="h-56 w-full object-cover sm:h-72 md:hidden md:h-96 lg:h-full lg:w-full"
         src="https://previews.dropbox.com/p/thumb/AB_QRKt2Q_Xdy8lzu6VY2ndcjX_ZCpGv7dl73_tpkHlFCwaPrswWfYA_U21atvcNutClYCFxngZIGQew_7_I5bCdrjRDXEi0N7cIri6vGVwupPDZ3w_A_7EMPaZ3YiQkU-WcZjhcVIUhvyZKsfgrJ7cs68aYlPskz5DYfdKLvLuQTSin780jgU84ENDj5f6XPVkSa7wCtWiVSOPhJDkDmEIuXPkpmCOyUL6ED7yHz-SiqlU-Eor89__tso-rsID9elOKZFJckGgEw8OjCaQEYoZih16NKkG9xhiMKCLoLwaW1m5s-JrChB92zyOhNEc8cQs0Oim_bpIOmVZWWpaWUuqq/p.png"
-        alt="Descriptive alt text"
+        alt="Music Collaboration Collage"
       />
       <div className="absolute inset-0 bg-[#cad2c5] mix-blend-multiply" />
       <div className="relative px-4 py-10 sm:px-6 lg:px-8 lg:py-2">
