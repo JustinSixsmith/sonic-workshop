@@ -1,36 +1,36 @@
 const features = [
   {
-    name: "Feature One",
+    name: "Global Collaboration",
     description:
-      "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores impedit perferendis suscipit eaque, iste dolor cupiditate blanditiis ratione.",
+      "Connect with musicians around the world and work together to create your next masterpiece.",
   },
   {
-    name: "Feature Two",
+    name: "Real-time Jamming",
     description:
-      "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores impedit perferendis suscipit eaque, iste dolor cupiditate blanditiis ratione.",
+      "Feel the thrill of live jamming sessions with our ultra-low latency audio streaming.",
   },
   {
-    name: "Feature Three",
+    name: "Effortless File Sharing",
     description:
-      "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores impedit perferendis suscipit eaque, iste dolor cupiditate blanditiis ratione.",
+      "Share your tracks, stems, and ideas smoothly and securely with collaborators.",
   },
   // More items...
 ];
 
 export default function Features() {
   return (
-    <div className="bg-white py-12">
+    <div className="bg-[#ebebeb] py-12">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <div className="lg:text-center">
-          <h2 className="text-base font-semibold uppercase tracking-wide text-indigo-600">
+          <h2 className="text-base font-semibold uppercase tracking-wide text-[#337180]">
             Features
           </h2>
-          <p className="mt-2 text-3xl font-extrabold leading-8 tracking-tight text-gray-900 sm:text-4xl">
-            A better way to send money
+          <p className="mt-2 text-3xl font-extrabold leading-8 tracking-tight text-[#212936] sm:text-4xl">
+            Revolutionize your music creation
           </p>
-          <p className="mt-4 max-w-2xl text-xl text-gray-500 lg:mx-auto">
-            Lorem ipsum dolor sit amet consect adipisicing elit. Possimus magnam
-            voluptatum cupiditate veritatis in accusamus quisquam.
+          <p className="mt-4 max-w-2xl text-xl text-[#212936] lg:mx-auto">
+            Sonic Workshop provides a unique platform to collaborate, create,
+            and enjoy music in an entirely new way.
           </p>
         </div>
 
@@ -39,7 +39,7 @@ export default function Features() {
             {features.map((feature) => (
               <div key={feature.name} className="relative">
                 <dt>
-                  <div className="absolute flex h-12 w-12 items-center justify-center rounded-md bg-indigo-500 text-white">
+                  <div className="absolute flex h-12 w-12 items-center justify-center rounded-md bg-[#337180] text-[#EBEBEB]">
                     <svg
                       className="h-6 w-6"
                       fill="none"
@@ -54,11 +54,11 @@ export default function Features() {
                       />
                     </svg>
                   </div>
-                  <p className="ml-16 text-lg font-medium leading-6 text-gray-900">
+                  <p className="ml-16 text-lg font-medium leading-6 text-[#212936]">
                     {feature.name}
                   </p>
                 </dt>
-                <dd className="ml-16 mt-2 text-base text-gray-500">
+                <dd className="ml-16 mt-2 text-base text-[#212936]">
                   {feature.description}
                 </dd>
               </div>

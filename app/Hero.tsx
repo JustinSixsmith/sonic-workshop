@@ -1,7 +1,7 @@
 import React from "react";
 
 const Hero = () => (
-  <div className="flex h-[300px] flex-col items-center justify-between bg-[#d64933] p-10 text-[#ebebeb] md:h-screen md:flex-row">
+  <div className="flex h-[400px] flex-col items-center justify-between rounded-md bg-[#d64933] p-10 text-[#ebebeb] md:h-screen md:flex-row">
     <div className="max-w-lg px-5">
       <h1 className="mb-2 text-4xl font-bold md:text-6xl">
         Welcome to <p className="text-[#212936]">Sonic Workshop</p>
@@ -9,7 +9,7 @@ const Hero = () => (
       <p className="mb-5 text-lg md:text-2xl">
         Collaborate, create, and share your music with the world.
       </p>
-      <button className="rounded bg-[#cad2c5] px-4 py-2 font-bold text-[#212936] hover:bg-[#ebebeb]">
+      <button className="rounded bg-[#cad2c5] px-4 py-2 font-bold text-[#212936] hover:bg-[#EBEBEB]">
         Get Started
       </button>
     </div>
