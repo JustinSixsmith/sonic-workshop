@@ -6,12 +6,30 @@ import Testamonials from "./Testamonials";
 
 export default function Home() {
   return (
-    <main className="mx-auto flex min-h-screen max-w-7xl flex-col space-y-8 rounded bg-[#ebebeb] px-4 pb-8 pt-8 text-gray-900">
-      <Hero />
-      <About />
-      <Features />
-      <CallToAction />
-      <Testamonials />
-    </main>
+    <div style={{ position: "relative" }}>
+      <video
+        autoPlay
+        muted
+        loop
+        id="myVideo"
+        style={{
+          position: "fixed",
+          right: 0,
+          bottom: 0,
+          minWidth: "100%",
+          minHeight: "100%",
+          zIndex: -1,
+        }}
+      >
+        <source src="/hipster-friends.mp4" type="video/mp4" />
+      </video>
+      <main className="mx-auto flex min-h-screen max-w-7xl flex-col space-y-4 rounded px-4 pb-4 pt-4 text-gray-900 opacity-95">
+        <Hero />
+        <About />
+        <Features />
+        <CallToAction />
+        <Testamonials />
+      </main>
+    </div>
   );
 }

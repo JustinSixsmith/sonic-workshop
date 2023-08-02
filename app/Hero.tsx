@@ -3,7 +3,7 @@ import Image from "next/image";
 
 const Hero = () => (
   <div className="flex flex-col items-center justify-center rounded bg-[#d64933] p-6 text-[#ebebeb] md:flex-row md:items-center md:justify-around md:p-10">
-    <div className="max-w-md md:mx-5">
+    <div className="max-w-md">
       <h1 className="mb-2 text-3xl font-bold md:text-5xl">
         <span className="block whitespace-nowrap">Welcome to</span>
         <span className="block bg-gradient-to-r from-[#337180] to-[#212936] bg-clip-text text-4xl font-bold text-transparent md:text-6xl">
