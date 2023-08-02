@@ -18,6 +18,11 @@ const nextConfig = {
         hostname: "previews.dropbox.com",
         port: "",
       },
+      {
+        protocol: "https",
+        hostname: "xsgames.co",
+        port: "",
+      },
     ],
   },
 };

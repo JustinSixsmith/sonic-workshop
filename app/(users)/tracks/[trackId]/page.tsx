@@ -25,7 +25,7 @@ async function TrackPage({ params: { trackId } }: PageProps) {
   if (!track.id) return notFound();
 
   return (
-    <div className="m-2, border-2 bg-[#CAD2C5] p-10 shadow-lg">
+    <div className="m-2, border-2 bg-[#CAD2C5] p-10 text-[#212936] shadow-lg">
       <p>
         #{track.id}: {track.name}
       </p>

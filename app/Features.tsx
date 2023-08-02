@@ -14,34 +14,43 @@ const features = [
     description:
       "Share your tracks, stems, and ideas smoothly and securely with collaborators.",
   },
+  {
+    name: "Integrated Feedback Loop",
+    description:
+      "Instantly share and receive constructive feedback within the shared workspace.",
+  },
+
   // More items...
 ];
 
 export default function Features() {
   return (
-    <div className="bg-[#ebebeb] py-12">
+    <div className="bg-[#cad2c5] py-8">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-        <div className="lg:text-center">
-          <h2 className="text-base font-semibold uppercase tracking-wide text-[#337180]">
+        <div className="text-center">
+          <h2 className="text-base font-semibold uppercase tracking-wide text-[#ebebeb]">
             Features
           </h2>
-          <p className="mt-2 text-3xl font-extrabold leading-8 tracking-tight text-[#212936] sm:text-4xl">
+          <p className="mt-2 text-2xl font-extrabold tracking-tight text-[#212936] sm:text-3xl">
             Revolutionize your music creation
           </p>
-          <p className="mt-4 max-w-2xl text-xl text-[#212936] lg:mx-auto">
+          <p className="mx-auto mt-2 max-w-2xl text-lg text-[#212936]">
             Sonic Workshop provides a unique platform to collaborate, create,
             and enjoy music in an entirely new way.
           </p>
         </div>
 
-        <div className="mt-10">
-          <dl className="space-y-10 md:grid md:grid-cols-2 md:gap-x-8 md:gap-y-10 md:space-y-0">
+        <div className="mt-8">
+          <dl className="space-y-8 md:grid md:grid-cols-2 md:gap-6 md:space-y-0">
             {features.map((feature) => (
-              <div key={feature.name} className="relative">
+              <div
+                key={feature.name}
+                className="relative rounded-lg bg-[#212936] p-4 text-[#ebebeb] shadow-lg transition-transform duration-500 hover:scale-105"
+              >
                 <dt>
-                  <div className="absolute flex h-12 w-12 items-center justify-center rounded-md bg-[#337180] text-[#EBEBEB]">
+                  <div className="absolute right-0 top-0 flex h-10 w-10 items-center justify-center rounded-lg bg-[#d64933]">
                     <svg
-                      className="h-6 w-6"
+                      className="h-5 w-5"
                       fill="none"
                       viewBox="0 0 24 24"
                       stroke="currentColor"
@@ -54,13 +63,9 @@ export default function Features() {
                       />
                     </svg>
                   </div>
-                  <p className="ml-16 text-lg font-medium leading-6 text-[#212936]">
-                    {feature.name}
-                  </p>
+                  <p className="mt-6 text-lg font-medium">{feature.name}</p>
                 </dt>
-                <dd className="ml-16 mt-2 text-base text-[#212936]">
-                  {feature.description}
-                </dd>
+                <dd className="mt-2 text-sm">{feature.description}</dd>
               </div>
             ))}
           </dl>

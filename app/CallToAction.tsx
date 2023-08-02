@@ -1,24 +1,24 @@
 export default function CallToAction() {
   return (
-    <div className="bg-white">
-      <div className="mx-auto px-4 py-12 sm:px-6 lg:px-8 lg:py-16">
-        <h2 className="text-3xl font-extrabold tracking-tight text-gray-900 sm:text-4xl">
+    <div className="bg-[#d64933] py-8 text-[#ebebeb]">
+      <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+        <h2 className="text-2xl font-extrabold tracking-tight sm:text-3xl">
           <span className="block">Ready to transform</span>
-          <span className="block text-[#337180]">
+          <span className="block text-[#EBEBEB]">
             your music collaboration experience?
           </span>
         </h2>
-        <p className="mt-4 text-lg text-gray-600">
+        <p className="mt-2 text-lg">
           Begin your free trial today and enjoy limitless collaboration, easy
           file sharing, live jam sessions, and a global community of musicians
           eager to collaborate and grow. Unleash your creativity with Sonic
           Workshop.
         </p>
-        <div className="mt-8 flex">
+        <div className="mt-4 flex">
           <div className="inline-flex rounded-md shadow">
             <a
               href="#"
-              className="inline-flex items-center justify-center rounded-md border border-transparent bg-[#337180] px-5 py-3 text-base font-medium text-[#EBEBEB] hover:bg-[#2F6775]"
+              className="inline-flex items-center justify-center rounded-md border border-transparent bg-[#212936] px-4 py-2 text-sm font-medium text-[#cad2c5] hover:bg-[#181d24]"
             >
               Get started
             </a>
@@ -26,7 +26,7 @@ export default function CallToAction() {
           <div className="ml-3 inline-flex">
             <a
               href="#"
-              className="inline-flex items-center justify-center rounded-md border border-transparent bg-[#D5DCD1] px-5 py-3 text-base font-medium text-[#337180] hover:bg-[#CAD2C5]"
+              className="inline-flex items-center justify-center rounded-md border border-transparent bg-[#ebebeb] px-4 py-2 text-sm font-medium text-[#212936] hover:bg-[#d5d5d5]"
             >
               Learn more
             </a>
