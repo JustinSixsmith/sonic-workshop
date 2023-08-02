@@ -18,7 +18,7 @@ const Hero = () => (
       </button>
     </div>
     <Image
-      className="mt-6 h-48 w-48 object-cover md:mt-0 md:h-96 md:w-96 lg:h-1/2 lg:w-1/2"
+      className="mt-6 h-48 w-48 rounded object-cover md:mt-0 md:h-96 md:w-96 lg:h-1/2 lg:w-1/2"
       width={400}
       height={400}
       src="/hero-image.png"

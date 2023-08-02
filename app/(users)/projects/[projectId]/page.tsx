@@ -11,7 +11,7 @@ type PageProps = {
 
 const fetchProject = async (projectId: string) => {
   const res = await fetch(
-    `https://64c4022067cfdca3b6608e88.mockapi.io/track/${projectId}`,
+    `https://64c4022067cfdca3b6608e88.mockapi.io/project/${projectId}`,
     { next: { revalidate: 60 } },
   );
 

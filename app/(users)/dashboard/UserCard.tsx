@@ -4,15 +4,22 @@ import React from "react";
 // Placeholder user data - replace with real data eventually
 const user = {
   name: "User Name",
-  avatar:
-    "https://images.unsplash.com/photo-1522075469751-3a6694fb2f61?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1180&q=80 ",
+  role: "Contributor",
+  about: "I'm a music enthusiast and love collaborating on new projects!",
   status: "Online",
+  projects: 12,
+  tracks: 24,
+  collaborators: 15,
+  lookingForCollaboration: true,
+  avatar: "https://images.unsplash.com/photo-1522075469751-3a6694fb2f61",
 };
 
 export default function UserCard() {
+  // Placeholder user data
+
   return (
-    <div className="rounded-lg bg-white p-4 shadow">
-      <div className="flex items-center">
+    <div className="rounded bg-white p-4 shadow">
+      <div className="mb-4 flex items-center">
         <div className="flex-shrink-0">
           <Image
             className="h-12 w-12 rounded-full"
@@ -27,9 +34,23 @@ export default function UserCard() {
             {user.name}
           </div>
           <div className="text-sm leading-5 text-gray-500">
-            Status: {user.status}
+            {user.role} | Status: {user.status}
           </div>
         </div>
+      </div>
+      <div className="mb-4 text-sm text-gray-500">{user.about}</div>
+      <div className="text-sm leading-5 text-gray-500">
+        Projects: {user.projects} | Tracks: {user.tracks} | Collaborators:{" "}
+        {user.collaborators}
+      </div>
+      <div className="mt-4">
+        {user.lookingForCollaboration ? (
+          <span className="text-green-500">Looking for collaborations</span>
+        ) : (
+          <span className="text-red-500">
+            Not currently looking for collaborations
+          </span>
+        )}
       </div>
     </div>
   );
