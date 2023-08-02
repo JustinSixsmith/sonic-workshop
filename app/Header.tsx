@@ -47,7 +47,7 @@ export default function Header() {
                   />
                   <Link
                     href="/"
-                    className="mx-2 font-bold text-[#EBEBEB] hover:text-white"
+                    className="mx-2 text-xl font-bold text-[#EBEBEB] hover:text-white"
                   >
                     Sonic Workshop
                   </Link>
@@ -60,9 +60,9 @@ export default function Header() {
                         href={item.href}
                         className={classNames(
                           item.current
-                            ? "bg-gray-900 text-white"
-                            : "text-[#EBEBEB] hover:bg-gray-700 hover:text-white",
-                          "rounded-md px-3 py-2 text-sm font-medium",
+                            ? "bg-[#cad2c5] text-[#212936]"
+                            : "text-[#EBEBEB] hover:bg-[#cad2c5] hover:text-[#212936]",
+                          "rounded px-3 py-2 text-sm font-medium",
                         )}
                         aria-current={item.current ? "page" : undefined}
                       >
@@ -93,7 +93,7 @@ export default function Header() {
                         width={64}
                         height={64}
                         src="https://images.unsplash.com/photo-1522075469751-3a6694fb2f61?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1180&q=80"
-                        alt=""
+                        alt="Profile Image"
                       />
                     </Menu.Button>
                   </div>
@@ -162,9 +162,9 @@ export default function Header() {
                   href={item.href}
                   className={classNames(
                     item.current
-                      ? "bg-gray-900 text-white"
-                      : "text-gray-300 hover:bg-gray-700 hover:text-white",
-                    "block rounded-md px-3 py-2 text-base font-medium",
+                      ? "bg-[#cad2c5] text-[#212936]"
+                      : "text-[#EBEBEB] hover:bg-[#cad2c5] hover:text-[#212936]",
+                    "block rounded px-3 py-2 text-base font-medium",
                   )}
                   aria-current={item.current ? "page" : undefined}
                 >

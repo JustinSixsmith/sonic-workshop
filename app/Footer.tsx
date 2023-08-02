@@ -14,10 +14,10 @@ function classNames(...classes: string[]) {
 
 export default function Footer() {
   return (
-    <footer className="bg-gray-800">
+    <footer className="bg-[#212936] text-[#EBEBEB]">
       <div className="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">
         <div className="flex flex-col-reverse pb-5 pt-3 sm:flex-row sm:items-center sm:justify-between">
-          <div className="mt-4 text-center text-sm text-gray-400 sm:order-1 sm:mt-0 sm:text-left">
+          <div className="mt-4 text-center text-sm sm:order-1 sm:mt-0 sm:text-left">
             &copy; {new Date().getFullYear()} Sonic Workshop. All rights
             reserved.
           </div>
@@ -50,8 +50,8 @@ export default function Footer() {
                 href={item.href}
                 className={classNames(
                   item.current
-                    ? "bg-gray-900 text-white"
-                    : "text-gray-300 hover:bg-gray-700 hover:text-white",
+                    ? "text-white"
+                    : "text-[#EBEBEB] hover:text-[#cad2c5]",
                   "rounded-md px-3 py-2 text-sm font-medium",
                 )}
                 aria-current={item.current ? "page" : undefined}

@@ -5,19 +5,19 @@ const testimonials = [
     name: "Jane Doe",
     role: "Lead Guitarist, The Band",
     image: "https://xsgames.co/randomusers/avatar.php?g=female",
-    content: `Sonic Workshop has revolutionized our songwriting process. The real-time collaboration is a game-changer.`,
+    content: `"Sonic Workshop has revolutionized our songwriting process. The real-time collaboration is a game-changer."`,
   },
   {
     name: "John Smith",
     role: "Producer, Studio XYZ",
     image: "https://xsgames.co/randomusers/avatar.php?g=male", // replace with your image path
-    content: `File sharing has never been easier. We can focus on creating music rather than dealing with logistics.`,
+    content: `"File sharing has never been easier. We can focus on creating music rather than dealing with logistics."`,
   },
   {
     name: "Alex Johnson",
     role: "Drummer, High Beats",
     image: "https://xsgames.co/randomusers/avatar.php?g=pixel",
-    content: `Sonic Workshop's online tools have given our band the flexibility to collaborate wherever we are. We can start a new project or jump into an existing one with just a few clicks. It's amazing.`,
+    content: `"Sonic Workshop's online tools have given our band the flexibility to collaborate wherever we are. We can start a new project or jump into an existing one with just a few clicks. It's amazing."`,
   },
   // add more testimonials here
 ];

@@ -1,10 +1,14 @@
+import Image from "next/image";
+
 export default function About() {
   return (
     <div className="relative flex flex-col-reverse overflow-hidden rounded-md bg-[#337180] px-4 py-10 shadow-xl sm:px-6 md:flex-row lg:px-8 lg:py-10">
       <div className="w-full md:w-1/2">
-        <img
+        <Image
+          width={400}
+          height={400}
           className="h-full w-full object-cover sm:h-full md:h-full lg:h-full lg:w-full"
-          src="https://previews.dropbox.com/p/thumb/AB_QRKt2Q_Xdy8lzu6VY2ndcjX_ZCpGv7dl73_tpkHlFCwaPrswWfYA_U21atvcNutClYCFxngZIGQew_7_I5bCdrjRDXEi0N7cIri6vGVwupPDZ3w_A_7EMPaZ3YiQkU-WcZjhcVIUhvyZKsfgrJ7cs68aYlPskz5DYfdKLvLuQTSin780jgU84ENDj5f6XPVkSa7wCtWiVSOPhJDkDmEIuXPkpmCOyUL6ED7yHz-SiqlU-Eor89__tso-rsID9elOKZFJckGgEw8OjCaQEYoZih16NKkG9xhiMKCLoLwaW1m5s-JrChB92zyOhNEc8cQs0Oim_bpIOmVZWWpaWUuqq/p.png"
+          src="/about-collage.png"
           alt="Music Collaboration Collage"
         />
       </div>
