@@ -23,7 +23,7 @@ export default function Home() {
       >
         <source src="/hipster-friends.mp4" type="video/mp4" />
       </video>
-      <main className="mx-auto flex min-h-screen max-w-7xl flex-col space-y-4 rounded px-4 pb-4 pt-4 text-gray-900 opacity-95">
+      <main className="mx-auto flex min-h-screen max-w-7xl flex-col space-y-3 rounded px-3 pb-3 pt-3 text-gray-900 opacity-95">
         <Hero />
         <About />
         <Features />

@@ -28,6 +28,7 @@
   }
 
   #myVideo {
+    background-color: #212936;
     position: fixed;
     right: 0;
     bottom: 0;
