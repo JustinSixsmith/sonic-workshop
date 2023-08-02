@@ -1,7 +1,7 @@
 import React from "react";
 
 function GroupOverview() {
-  return <div>GroupOverview</div>;
+  return <div className="p-4">GroupOverview</div>;
 }
 
 export default GroupOverview;

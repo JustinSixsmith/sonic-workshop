@@ -1,21 +1,27 @@
-import React from "react";
+import { HiOutlinePlus } from "react-icons/hi";
 
-function QuickActions() {
+export default function QuickActions() {
   return (
-    <div className="mt-4 rounded bg-gray-200 p-4">
-      <h2 className="text-xl font-bold">Quick Actions</h2>
-      {/* Replace these with actual actions or links */}
-      <button className="mt-2 w-full rounded bg-blue-500 p-2 text-white">
-        New Project
-      </button>
-      <button className="mt-2 w-full rounded bg-blue-500 p-2 text-white">
-        Join Group
-      </button>
-      <button className="mt-2 w-full rounded bg-blue-500 p-2 text-white">
-        Settings
-      </button>
-    </div>
+    <section className="rounded-lg bg-212936 p-4 text-ebebeb shadow-lg">
+      <h2 className="text-lg font-semibold text-cad2c5">Quick Actions</h2>
+      <div className="mt-2 space-y-2">
+        <button className="flex items-center space-x-2 text-337180 hover:text-d64933">
+          <HiOutlinePlus className="flex-shrink-0" />
+          <span>Create New Project</span>
+        </button>
+        <button className="flex items-center space-x-2 text-337180 hover:text-d64933">
+          <HiOutlinePlus className="flex-shrink-0" />
+          <span>Add New Member</span>
+        </button>
+        <button className="flex items-center space-x-2 text-337180 hover:text-d64933">
+          <HiOutlinePlus className="flex-shrink-0" />
+          <span>Upload New Track</span>
+        </button>
+        <button className="flex items-center space-x-2 text-337180 hover:text-d64933">
+          <HiOutlinePlus className="flex-shrink-0" />
+          <span>Invite Collaborator</span>
+        </button>
+      </div>
+    </section>
   );
 }
-
-export default QuickActions;

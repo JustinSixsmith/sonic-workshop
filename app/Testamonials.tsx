@@ -48,8 +48,8 @@ export default function Testimonials() {
                     className="mr-4 h-8 w-8 flex-shrink-0 rounded-full bg-[#cad2c5]"
                   />
                   <em>{testimonial.name}</em>
-                  <span className="ml-2 font-normal text-[#ebebeb]">
-                    , {testimonial.role}
+                  <span className="ml-6 font-normal text-[#ebebeb]">
+                    {testimonial.role}
                   </span>
                 </p>
               </footer>

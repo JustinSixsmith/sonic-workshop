@@ -7,9 +7,9 @@ import Link from "next/link";
 import { Fragment } from "react";
 
 const navigation = [
-  { name: "Dashboard", href: "dashboard", current: false },
+  { name: "Dashboard", href: "/dashboard", current: false },
   { name: "Group", href: "#", current: false },
-  { name: "Projects", href: "projects", current: false },
+  { name: "Projects", href: "/projects", current: false },
   { name: "Calendar", href: "#", current: false },
 ];
 

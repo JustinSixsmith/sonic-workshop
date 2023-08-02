@@ -17,7 +17,9 @@ async function ProjectList() {
       {projects.map((project) => (
         // eslint-disable-next-line react/jsx-key
         <p>
-          <Link href={`/tracks/${project.id}`}>Track name: {project.name}</Link>
+          <Link href={`/projects/${project.id}`}>
+            Track name: {project.name}
+          </Link>
         </p>
       ))}
     </>
