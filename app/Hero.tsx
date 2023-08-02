@@ -2,7 +2,7 @@ import React from "react";
 import Image from "next/image";
 
 const Hero = () => (
-  <div className="flex flex-col items-center justify-center rounded-md bg-[#d64933] p-6 text-[#ebebeb] md:flex-row md:items-center md:justify-around md:p-10">
+  <div className="flex flex-col items-center justify-center rounded bg-[#d64933] p-6 text-[#ebebeb] md:flex-row md:items-center md:justify-around md:p-10">
     <div className="max-w-md md:mx-5">
       <h1 className="mb-2 text-3xl font-bold md:text-5xl">
         <span className="block whitespace-nowrap">Welcome to</span>

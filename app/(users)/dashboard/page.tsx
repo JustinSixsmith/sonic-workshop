@@ -5,26 +5,30 @@ import QuickActions from "./QuickActions";
 import RecentActivity from "./RecentActivity";
 import UserCard from "./UserCard";
 import TaskSummary from "./TaskSummary";
+import QuickStats from "./QuickStats";
+import UploadedTracks from "./UploadedTracks";
+
+const stats = { totalProjects: 5, totalTracks: 20, totalHours: 150 };
+const tracks = [
+  { id: 1, name: "Track 1", uploadDate: "2023-07-29", length: "3:00" },
+  // More tracks...
+];
 
 function Dashboard() {
   return (
-    <div className="grid grid-cols-3 gap-4 p-4">
-      <div className="col-span-3 space-y-4 md:col-span-1">
+    <div className="flex flex-col gap-6 rounded bg-212936 p-4 text-ebebeb lg:flex-row">
+      <div className="flex w-full flex-col space-y-6 lg:w-1/3">
         <UserCard />
         <QuickActions />
         <TaskSummary />
+        <QuickStats {...stats} />
+        <UploadedTracks tracks={tracks} />
       </div>
 
-      <div className="col-span-3 space-y-4 md:col-span-2">
+      <div className="flex w-full flex-col space-y-6 lg:w-2/3">
         <ProjectsOverview />
         <GroupOverview />
-      </div>
-
-      <div className="col-span-3 p-4 md:col-span-1">
         <RecentActivity />
-      </div>
-
-      <div className="col-span-3 p-4 md:col-span-2">
         <CalendarEvents />
       </div>
     </div>

@@ -25,7 +25,7 @@ const features = [
 
 export default function Features() {
   return (
-    <div className="rounded-md bg-[#cad2c5] py-8">
+    <div className="rounded bg-[#cad2c5] py-8">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <div className="text-center">
           <h2 className="text-base font-semibold uppercase tracking-wide text-[#d64933]">
