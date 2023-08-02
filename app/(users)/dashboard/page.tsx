@@ -1,20 +1,30 @@
-import ProjectList from "../projects/ProjectList";
-import TrackList from "../tracks/TrackList";
-import Main from "./Main";
-import Sidebar from "./Sidebar";
+import CalendarEvents from "./CalendarEvents";
+import GroupOverview from "./GroupOverview";
+import ProjectsOverview from "./ProjectsOverview";
+import QuickActions from "./QuickActions";
+import RecentActivity from "./RecentActivity";
+import UserCard from "./UserCard";
 
 function Dashboard() {
   return (
-    <div>
-      <p>Welcome to the Dashboard!</p>
+    <div className="grid grid-cols-3 gap-4 p-4">
+      <div className="col-span-3 md:col-span-1">
+        <UserCard />
+        <QuickActions />
+      </div>
 
-      <ProjectList />
+      <div className="col-span-3 md:col-span-2">
+        <ProjectsOverview />
+        <GroupOverview />
+      </div>
 
-      <TrackList />
+      <div className="col-span-3 md:col-span-1">
+        <RecentActivity />
+      </div>
 
-      <Sidebar />
-      <Main />
-      {/* This is where the main content will go. You can replace this with routing logic based on the selected section. */}
+      <div className="col-span-3 md:col-span-2">
+        <CalendarEvents />
+      </div>
     </div>
   );
 }
