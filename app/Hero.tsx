@@ -6,7 +6,7 @@ const Hero = () => (
       className="absolute inset-0 rounded"
       style={{
         backgroundColor: "#d64933",
-        opacity: 0.8,
+        opacity: 0.7,
         zIndex: -1,
       }}
     />
