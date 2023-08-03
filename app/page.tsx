@@ -14,17 +14,25 @@ export default function Home() {
         id="myVideo"
         style={{
           position: "fixed",
+          top: 0,
+          left: 0,
           right: 0,
           bottom: 0,
-          minWidth: "100%",
-          minHeight: "100%",
+          width: "100%",
+          height: "100%",
+          objectFit: "cover",
           zIndex: -1,
         }}
       >
         <source src="/hipster-friends.mp4" type="video/mp4" />
       </video>
-      <main className="mx-auto flex min-h-screen max-w-7xl flex-col space-y-3 rounded px-3 pb-3 pt-3 text-gray-900 opacity-95">
-        <Hero />
+      <div className="md:flex">
+        <div className="md:w-1/2">
+          <Hero />
+        </div>
+        <div className="hidden bg-[#d64933] opacity-80 md:block md:w-1/2"></div>
+      </div>
+      <main className="mx-auto flex min-h-screen max-w-7xl flex-col space-y-8 rounded px-4 pb-8 pt-8 text-gray-900 opacity-95">
         <About />
         <Features />
         <CallToAction />

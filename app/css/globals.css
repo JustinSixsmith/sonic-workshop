@@ -27,9 +27,9 @@
     @apply mx-auto max-w-5xl px-4 sm:px-6 lg:px-8;
   }
 
-  #myVideo {
+  .bgVideo {
     background-color: #212936;
-    position: fixed;
+    position: top;
     right: 0;
     bottom: 0;
     min-width: 100%;

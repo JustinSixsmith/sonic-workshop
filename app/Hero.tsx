@@ -1,9 +1,16 @@
 import React from "react";
-import Image from "next/image";
 
 const Hero = () => (
-  <div className="flex flex-col items-center justify-center rounded bg-[#d64933] p-6 text-[#ebebeb] md:flex-row md:items-center md:justify-around md:p-10">
-    <div className="max-w-md">
+  <div className="relative flex flex-col items-center justify-center p-6 text-[#ebebeb] md:flex-row md:items-center md:justify-around md:p-10">
+    <div
+      className="absolute inset-0 rounded"
+      style={{
+        backgroundColor: "#d64933",
+        opacity: 0.8,
+        zIndex: -1,
+      }}
+    />
+    <div className="z-10 mx-auto max-w-md">
       <h1 className="mb-2 text-3xl font-bold md:text-5xl">
         <span className="block whitespace-nowrap">Welcome to</span>
         <span className="block bg-gradient-to-r from-[#337180] to-[#212936] bg-clip-text text-4xl font-bold text-transparent md:text-6xl">
@@ -17,13 +24,6 @@ const Hero = () => (
         Get Started
       </button>
     </div>
-    <Image
-      className="mt-6 h-48 w-48 rounded object-cover md:mt-0 md:h-96 md:w-96 lg:h-1/2 lg:w-1/2"
-      width={400}
-      height={400}
-      src="/hero-image.png"
-      alt="Hero Image"
-    />
   </div>
 );
 
