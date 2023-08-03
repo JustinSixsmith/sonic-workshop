@@ -3,7 +3,7 @@ import React from "react";
 const Hero = () => (
   <div className="relative flex flex-col items-center justify-center p-6 text-[#ebebeb] md:flex-row md:items-center md:justify-around md:p-10">
     <div
-      className="absolute inset-0 rounded"
+      className="absolute inset-0 rounded-md"
       style={{
         backgroundColor: "#d64933",
         opacity: 0.7,
@@ -20,7 +20,7 @@ const Hero = () => (
       <p className="mb-5 text-lg md:text-xl">
         Collaborate, create, and share your music with the world.
       </p>
-      <button className="rounded bg-[#cad2c5] px-5 py-2 text-lg font-bold text-[#212936] hover:bg-[#EBEBEB]">
+      <button className="rounded-md bg-[#cad2c5] px-5 py-2 text-lg font-bold text-[#212936] hover:bg-[#EBEBEB]">
         Get Started
       </button>
     </div>

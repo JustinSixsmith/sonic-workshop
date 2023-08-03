@@ -2,7 +2,7 @@ import Image from "next/image";
 
 export default function About() {
   return (
-    <div className="relative flex flex-col-reverse overflow-hidden rounded bg-[#337180] px-4 py-10 shadow-xl sm:px-6 md:flex-row lg:px-8 lg:py-10">
+    <div className="relative flex flex-col-reverse overflow-hidden rounded-md bg-[#337180] px-4 py-10 shadow-xl sm:px-6 md:flex-row lg:px-8 lg:py-10">
       <div className="w-full md:w-1/2">
         <Image
           width={400}

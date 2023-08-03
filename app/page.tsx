@@ -32,7 +32,7 @@ export default function Home() {
         </div>
         <div className="hidden bg-[#d64933] opacity-70 md:block md:w-1/2"></div>
       </div>
-      <main className="mx-auto flex min-h-screen max-w-7xl flex-col space-y-8 rounded px-4 pb-8 pt-8 text-gray-900 opacity-95">
+      <main className="mx-auto flex min-h-screen max-w-7xl flex-col space-y-8 rounded-md px-4 pb-8 pt-8 text-gray-900 opacity-95">
         <About />
         <Features />
         <CallToAction />

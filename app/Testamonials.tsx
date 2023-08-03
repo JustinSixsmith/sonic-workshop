@@ -24,7 +24,7 @@ const testimonials = [
 
 export default function Testimonials() {
   return (
-    <div className="rounded bg-[#212936] py-12 text-[#ebebeb]">
+    <div className="rounded-md bg-[#212936] py-12 text-[#ebebeb]">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <h2 className="text-2xl font-extrabold">What Our Users Are Saying</h2>
         <div className="mt-8 grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
