@@ -18,7 +18,7 @@ export default function CallToAction() {
           <div className="inline-flex rounded-md shadow">
             <a
               href="#"
-              className="inline-flex items-center justify-center rounded-md border border-transparent bg-[#212936] px-4 py-2 text-sm font-medium text-[#cad2c5] hover:bg-[#181d24]"
+              className="inline-flex items-center justify-center rounded-md border border-transparent bg-[#212936] px-4 py-2 text-sm font-medium text-[#cad2c5] hover:bg-[#181d24] hover:text-[#ebebeb]"
             >
               Get started
             </a>
