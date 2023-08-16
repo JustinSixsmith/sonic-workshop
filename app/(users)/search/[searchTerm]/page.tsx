@@ -1,4 +1,5 @@
 import { User } from "@/typings";
+import Image from "next/image";
 import React from "react";
 
 type PageProps = {
@@ -25,7 +26,12 @@ async function SearchResults({ params: { searchTerm } }: PageProps) {
       {
         <ol className="space-y-5 py-5">
           <li className="font-bold">{searchResults.name}</li>
-          <img src={searchResults.avatar} alt="" />
+          <Image
+            src={searchResults.avatar}
+            alt="avatar"
+            width={50}
+            height={50}
+          />
           <li>{searchResults.email}</li>
           <li>{searchResults.bio}</li>
         </ol>
