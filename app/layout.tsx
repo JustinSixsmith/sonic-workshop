@@ -25,7 +25,7 @@ export default function RootLayout({
     <html lang="en">
       <body className={inter.className}>
         <DynamicHeaderWithNoSSR />
-        <main className="flex-grow text-[#EBEBEB]">{children}</main>
+        <main className="flex-grow">{children}</main>
         <Footer />
       </body>
     </html>
