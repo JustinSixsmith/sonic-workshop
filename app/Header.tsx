@@ -1,10 +1,8 @@
-"use client";
-
 import { Disclosure, Menu, Transition } from "@headlessui/react";
 import { Bars3Icon, BellIcon, XMarkIcon } from "@heroicons/react/24/outline";
 import Image from "next/image";
 import Link from "next/link";
-import { Fragment } from "react";
+import { Fragment, useEffect, useState } from "react";
 
 const navigation = [
   { name: "Dashboard", href: "/dashboard", current: false },
@@ -18,6 +16,16 @@ function classNames(...classes: string[]) {
 }
 
 export default function Header() {
+  const [isMounted, setIsMounted] = useState(false);
+
+  useEffect(() => {
+    setIsMounted(true);
+  }, []);
+
+  if (!isMounted) {
+    return null;
+  }
+
   return (
     <Disclosure as="nav" className="bg-gray-800">
       {({ open }) => (
