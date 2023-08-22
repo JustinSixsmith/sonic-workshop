@@ -16,7 +16,7 @@ const tracks = [
 
 function Dashboard() {
   return (
-    <div className="flex flex-col gap-6 rounded bg-ebebeb p-4 text-ebebeb lg:flex-row">
+    <div className="flex flex-col gap-6 rounded bg-[#ebebeb] p-4 text-[#ebebeb] lg:flex-row">
       <div className="flex w-full flex-col space-y-6 lg:w-1/3">
         <UserCard />
         <QuickActions />

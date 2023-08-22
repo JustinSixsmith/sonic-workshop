@@ -11,18 +11,18 @@ export default function ProfilePage() {
   };
 
   return (
-    <div className="bg-#212936 text-#ebebeb p-8">
-      <div className="bg-#337180 mx-auto w-full rounded-lg p-6 shadow-lg md:w-1/2">
+    <div className="bg-[#212936] p-8 text-[#ebebeb]">
+      <div className="mx-auto w-full rounded-lg bg-[#337180] p-6 shadow-lg md:w-1/2">
         {/* Profile Image */}
         <div className="text-center">
           <Image
-            className="border-#cad2c5 rounded-full border-4"
+            className="rounded-full border-4 border-[#cad2c5]"
             src={user.avatar}
             width={150}
             height={150}
             alt="Profile Picture"
           />
-          <button className="text-#d64933 mt-2">Change Picture</button>
+          <button className="mt-2 text-[#d64933]">Change Picture</button>
         </div>
 
         {/* Personal Details */}
@@ -56,10 +56,10 @@ export default function ProfilePage() {
 
         {/* Action Buttons */}
         <div className="mt-6 flex justify-between">
-          <button className="bg-#d64933 rounded px-4 py-2 text-white">
+          <button className="rounded bg-[#d64933] px-4 py-2 text-white">
             Edit Profile
           </button>
-          <button className="text-#d64933">Logout</button>
+          <button className="text-[#d64933]">Logout</button>
         </div>
       </div>
     </div>

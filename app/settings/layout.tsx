@@ -7,9 +7,6 @@ export default function RootLayout({
 }) {
   return (
     <main className="flex">
-      <div>
-        <SettingsPage />
-      </div>
       <div className="flex-1">{children}</div>
     </main>
   );

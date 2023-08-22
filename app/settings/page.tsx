@@ -1,13 +1,13 @@
 export default function SettingsPage() {
   return (
-    <div className="bg-#212936 text-#ebebeb p-8">
-      <div className="bg-#337180 mx-auto w-full rounded-lg p-6 shadow-lg md:w-3/4">
+    <div className="h-auto bg-[#212936] p-8 text-[#ebebeb]">
+      <div className="mx-auto w-full rounded-lg bg-[#337180] p-6 shadow-lg md:w-3/4">
         {/* Account Settings */}
         <div className="mt-6">
           <h2 className="mb-2 text-xl font-bold">Account Settings:</h2>
-          <button className="text-#d64933">Update Email</button>
-          <button className="text-#d64933 ml-4">Change Password</button>
-          <button className="text-#d64933 ml-4">Delete Account</button>
+          <button className="text-[#d64933]">Update Email</button>
+          <button className="ml-4 text-[#d64933]">Change Password</button>
+          <button className="ml-4 text-[#d64933]">Delete Account</button>
         </div>
 
         {/* Privacy Settings */}
@@ -41,10 +41,10 @@ export default function SettingsPage() {
 
         {/* Action Buttons */}
         <div className="mt-6 flex justify-between">
-          <button className="bg-#d64933 rounded px-4 py-2 text-white">
+          <button className="rounded bg-[#d64933] px-4 py-2 text-white">
             Save Changes
           </button>
-          <button className="bg-#cad2c5 text-#212936 rounded px-4 py-2">
+          <button className="rounded bg-[#cad2c5] px-4 py-2 text-[#212936]">
             Reset to Default
           </button>
         </div>
