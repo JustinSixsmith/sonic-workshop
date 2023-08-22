@@ -1,6 +1,5 @@
 import { Track } from "@/typings";
 import Link from "next/link";
-import Footer from "../../Footer";
 
 const fetchTracks = async () => {
   const res = await fetch("https://64c4022067cfdca3b6608e88.mockapi.io/track");
